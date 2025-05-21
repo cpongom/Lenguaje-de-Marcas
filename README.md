@@ -8,13 +8,13 @@ Ejercicio | Descripción
 ## TEMA 1
 Ejercicio | Descripción
 ----------|------------
-[Ejercicio1](biblioteca.xml)|
-[Ejercicio2](biblioteca.xml)|
-[Ejercicio3](biblioteca.xml)|
-[Ejercicio4](biblioteca.xml)|
-[Ejercicio5](biblioteca.xml)|
-[Ejercicio6](biblioteca.xml)|
-[Ejercicio7](biblioteca.xml)|
+[Ejercicio1](/Tema-1/Ejercicio1.html)|
+[Ejercicio2](/Tema-1/Ejercicio2.html)|
+[Ejercicio3](/Tema-1/Ejercicio3.html)|
+[Ejercicio4](/Tema-1/Ejercicio4.html)|
+[Ejercicio5](/Tema-1/Ejercicio5.html)|
+[Ejercicio6](/Tema-1/Ejercicio6.html)|
+[Ejercicio7](/Tema-1/Ejercicio7.html)|
 ## Proyecto - Final
 Ejercicio | Descripción
 ----------|------------
