@@ -15,6 +15,7 @@ Ejercicio | Descripción
 [Ejercicio5](biblioteca.xml)|
 [Ejercicio6](biblioteca.xml)|
 [Ejercicio7](biblioteca.xml)|
-----------|------------
 ## Proyecto - Final
+Ejercicio | Descripción
+----------|------------
 [ProyectoFinal](/Proyecto-Final/index.html)|Cuestionario de preguntas
