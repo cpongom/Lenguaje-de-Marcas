@@ -3,8 +3,8 @@ Lenguaje de marcas de DAW
 ## TEMA 0
 Ejercicio | Descripción
 ----------|------------
-[Ejercicio1](pagina.html)|Crea una página web sencilla con un encabezado h1 y un pequeño párrafo de texto de tu elección
-[Ejercicio2](biblioteca.xml)|Crea un documento xml que incluya información sobre un par de libros de una biblioteca.
+[Ejercicio1](/Tema-0/pagina.html)|Crea una página web sencilla con un encabezado h1 y un pequeño párrafo de texto de tu elección
+[Ejercicio2](/Tema-0/biblioteca.xml)|Crea un documento xml que incluya información sobre un par de libros de una biblioteca.
 ## TEMA 1
 Ejercicio | Descripción
 ----------|------------
