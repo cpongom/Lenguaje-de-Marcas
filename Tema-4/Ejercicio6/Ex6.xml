@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter>
+  <sender>
+    <name>María Pérez</name>
+    <address>Calle Olmo 45, 28013 Madrid, España</address>
+  </sender>
+  <receiver>
+    <name>Carlos Gómez</name>
+    <address>Calle Flor 12, 28010 Madrid, España</address>
+  </receiver>
+  <date>2025-06-06</date>
+  <body>
+    <paragraph>Estimado Carlos,</paragraph>
+    <paragraph>Quería informarte de que la próxima reunión se celebrará el viernes 13 de junio a las 10:00 h en la sala 2. He preparado la presentación sobre el proyecto y me gustaría contar con tu feedback.</paragraph>
+    <paragraph>Si tienes alguna sugerencia previa, no dudes en hacérmela llegar.</paragraph>
+    <paragraph>Un saludo,</paragraph>
+  </body>
+  <signature>Atentamente,<br/>María Pérez</signature>
+</letter>
