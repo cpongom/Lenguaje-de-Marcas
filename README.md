@@ -38,11 +38,47 @@ Ejercicio | Descripción
 [Ejercicio 28](/Tema-1/Ejercicio28.html)|Implementación de audio
 [Ejercicio 29](/Tema-1/Ejercicio29.html)|Inserción de vídeo de YouTube
 [Ejercicio 30](/Tema-1/Ejercicio30.html)|Sitio web portfolio en hosting gratuito
-[Ejercicio 31](/Tema-1/Ejercicio31.html)|
-[Ejercicio 32](/Tema-1/Ejercicio32.html)|
-[Ejercicio 33](/Tema-1/Ejercicio33.html)|
 
-## Tema 2
+## Tema 3
 Ejercicio | Descripción
 ----------|------------
+[Ejercicio 1](/Tema-3/Ejercicio1.html)|Ejercicio básico
+[Ejercicio 2](/Tema-3/Ejercicio2.html)|Mostrar mensaje
+[Ejercicio 3](/Tema-3/Ejercicio3.html)|Mostrar imágenes
+[Ejercicio 4](/Tema-3/Ejercicio4.html)|Trabajando con variables
+[Ejercicio 5](/Tema-3/Ejercicio5.html)|Cambiamos imagen, estilo y texto
+[Ejercicio 6](/Tema-3/Ejercicio6.html)|Copia la imagen
+[Ejercicio 7](/Tema-3/Ejercicio7.html)|Slider
+[Ejercicio 8](/Tema-3/Ejercicio8.html)|Calculadora
+[Ejercicio 9](/Tema-3/Ejercicio9.html)|Conversor de unidades
+[Ejercicio 10](/Tema-3/Ejercicio10.html)|Juego de memoria
+[Ejercicio 11](/Tema-3/Ejercicio11.html)|Validación de formulario
+[Ejercicio 12](/Tema-3/Ejercicio12.html)|Galería de imágenes dinámica
+[Ejercicio 13](/Tema-3/Ejercicio13.html)|Añadir elementos
+[Ejercicio 14](/Tema-3/Ejercicio14.html)|Creamos elementos dinámicos
+[Ejercicio 15](/Tema-3/Ejercicio15.html)|Removemos elementos
+[Ejercicio 16](/Tema-3/Ejercicio16.html)|Documento de HTML con propiedades
+[Ejercicio 17](/Tema-3/Ejercicio17.html)|Editor HTML y CSS
+[Ejercicio 18](/Tema-3/Ejercicio18.html)|Cambiamos el estilo
+[Ejercicio 19](/Tema-3/Ejercicio19.html)|Cambiamos el estilo de sheet
+[Ejercicio 20](/Tema-3/Ejercicio20.html)|HTML Y DOM
+
+## Tema 4
+Ejercicio | Descripción
+----------|------------
+[Ejercicio 1](/Tema-4/Ejercicio1.html)|Creación de un documento XML básico sobre información personal
+[Ejercicio 2](/Tema-4/Ejercicio2.html)|Desarrollo de DTD interno y externo para validar un catálogo de libros
+[Ejercicio 3](/Tema-4/Ejercicio3.html)|Diseño de XML Schema para una biblioteca digital
+[Ejercicio 4](/Tema-4/Ejercicio4.html)|Transformación de XML a HTML usando XSLT para mostrar un menú de restaurante
+[Ejercicio 5](/Tema-4/Ejercicio5.html)|Validación de documentos XML usando diferentes esquemas y DTDs
+[Ejercicio 6](/Tema-4/Ejercicio6.html)|Implementación de namespaces y procesamiento de XML con JavaScript
+[Ejercicio 7](/Tema-4/Ejercicio7.html)|Desarrollo de una aplicación web completa usando XML, XSLT y JavaScript
+[Ejercicio 8](/Tema-4/Ejercicio8.html)|Consultas básicas al DOM de un documento XML de libros (books.xml)
+[Ejercicio 9](/Tema-4/Ejercicio9.html)|Manipulación de un catálogo de CDs (cd_catalog.xml) usando XMLHttpRequest
+[Ejercicio 10](/Tema-4/Ejercicio10.html)|Creación de una tabla con información de libros usando DOM y XMLHttpRequest
+[Ejercicio 11](/Tema-4/Ejercicio11.html)|Visualización de información de CDs usando AJAX y cd_catalog.xml
+[Ejercicio 12](/Tema-4/Ejercicio12.html)|Consulta de información meteorológica de AEMET para localidades de Huelva
+[Ejercicio 13](/Tema-4/Ejercicio13.html)|Manipulación de arrays JSON con AJAX
+[Ejercicio 14](/Tema-4/Ejercicio14.html)|	Procesamiento de objetos JSON complejos con mascotas
+[Ejercicio 15](/Tema-4/Ejercicio15.html)|Consumo de la API de la NASA para mostrar la imagen astronómica del día
 
