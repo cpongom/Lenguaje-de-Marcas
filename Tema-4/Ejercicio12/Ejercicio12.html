@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio AJAX 2 - Meteorología AEMET</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1rem;
+    }
+    .info {
+      margin-bottom: 1rem;
+    }
+    .info h3 {
+      margin-bottom: 0.5rem;
+    }
+    .info p {
+      margin: 0.2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Información Meteorológica de Huelva Capital (AEMET)</h2>
+  <div id="meteorologia" class="info">
+    Cargando datos...
+  </div>
+  <script>
+    const url = "http://www.aemet.es/xml/municipios/localidad_21041.xml";
+    function mostrarDatos(xmlDoc) {
+      const diaNodo = xmlDoc.getElementsByTagName("dia")[0];
+      const fecha = diaNodo.getAttribute("fecha");
+      const estadoElem = diaNodo.getElementsByTagName("estado_cielo")[0];
+      const estadoCielo = estadoElem.childNodes[0].nodeValue;
+      const tempNodo = diaNodo.getElementsByTagName("temperatura")[0];
+      const maxima = tempNodo.getElementsByTagName("maxima")[0].childNodes[0].nodeValue;
+      const minima = tempNodo.getElementsByTagName("minima")[0].childNodes[0].nodeValue;
+      const vientoNodo = diaNodo.getElementsByTagName("viento")[0];
+      const direccionViento = vientoNodo.getElementsByTagName("direccion")[0].childNodes[0].nodeValue;
+      const velocidadViento = vientoNodo.getElementsByTagName("velocidad")[0].childNodes[0].nodeValue;
+      const humedadNodo = diaNodo.getElementsByTagName("humedad_relativa")[0];
+      const humedad = humedadNodo.childNodes[0].nodeValue;
+      const contenedor = document.getElementById("meteorologia");
+      contenedor.innerHTML = `
+        <h3>Predicción para ${fecha}</h3>
+        <p><strong>Estado del cielo:</strong> ${estadoCielo}</p>
+        <p><strong>Temperatura máxima:</strong> ${maxima} °C</p>
+        <p><strong>Temperatura mínima:</strong> ${minima} °C</p>
+        <p><strong>Viento:</strong> ${direccionViento} a ${velocidadViento} km/h</p>
+        <p><strong>Humedad relativa:</strong> ${humedad} %</p>
+      `;
+    }
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        const xmlDoc = this.responseXML;
+        mostrarDatos(xmlDoc);
+      } else if (this.readyState === 4) {
+        document.getElementById("meteorologia").textContent = "Error al obtener datos.";
+      }
+    };
+    xhr.open("GET", url);
+    xhr.send();
+  </script>
+</body>
+</html>
