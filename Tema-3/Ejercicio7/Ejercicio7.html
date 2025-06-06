@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 7 - Slider de fondo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.6s ease-in-out;
+    }
+    button {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      position: absolute;
+      bottom: 20px;
+      cursor: pointer;
+    }
+    #prev {
+      left: 20px;
+    }
+    #next {
+      right: 20px;
+    }
+    #caption {
+      position: absolute;
+      top: 20px;
+      background: rgba(255,255,255,0.7);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="caption">Imagen 1</div>
+  <button id="prev" onclick="changeBackground(-1)">◀</button>
+  <button id="next" onclick="changeBackground(1)">▶</button>
+  <script>
+    const imagenes = [
+      { url: "fondo1.jpg", texto: "Primera imagen" },
+      { url: "fondo2.jpg", texto: "Segunda imagen" },
+      { url: "fondo3.jpg", texto: "Tercera imagen" },
+      { url: "fondo4.jpg", texto: "Cuarta imagen" }
+    ];
+    let indiceActual = 0;
+    function mostrarFondo() {
+      document.body.style.backgroundImage = `url('${imagenes[indiceActual].url}')`;
+      document.getElementById("caption").textContent = imagenes[indiceActual].texto;
+    }
+    function changeBackground(direccion) {
+      indiceActual += direccion;
+      if (indiceActual < 0) indiceActual = imagenes.length - 1;
+      if (indiceActual >= imagenes.length) indiceActual = 0;
+      mostrarFondo();
+    }
+    window.onload = mostrarFondo;
+  </script>
+</body>
+</html>
