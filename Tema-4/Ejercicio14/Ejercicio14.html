@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JSON 4</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 1rem;
+      width: 60%;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 0.4rem 0.6rem;
+    }
+    th {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <h2>JSON Demo</h2>
+  <button onclick="cargarJSON()">Cargar datos JSON</button>
+  <p id="mostrarEdad"></p>
+  <p id="mostrarPrimerTipo"></p>
+  <p id="mostrarPrimerNombre"></p>
+  <p id="numMascotas"></p>
+  <p id="nombresMascotas"></p>
+  <p id="todoParrafo"></p>
+  <div id="tablaMascotas"></div>
+  <script>
+    function cargarJSON() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("mostrarEdad").textContent = `Edad: ${myObj.age}`;
+        if (myObj.pets.length > 0) {
+          document.getElementById("mostrarPrimerTipo").textContent =
+            `Tipo primera mascota: ${myObj.pets[0].type}`;
+        }
+        if (myObj.pets.length > 0) {
+          document.getElementById("mostrarPrimerNombre").textContent =
+            `Nombre primera mascota: ${myObj.pets[0].name}`;
+        }
+        document.getElementById("numMascotas").textContent =
+          `Número de mascotas: ${myObj.pets.length}`;
+        let nombres = "Nombres de mascotas: ";
+        for (let pet of myObj.pets) {
+          nombres += pet.name + ", ";
+        }
+        nombres = nombres.slice(0, -2);
+        document.getElementById("nombresMascotas").textContent = nombres;
+        let allData = `Nombre: ${myObj.name}. Edad: ${myObj.age}. Ciudad: ${myObj.city}. `;
+        allData += "Mascotas: ";
+        for (let i = 0; i < myObj.pets.length; i++) {
+          allData += `[${myObj.pets[i].type}: ${myObj.pets[i].name}] `;
+        }
+        document.getElementById("todoParrafo").textContent = allData;
+        let html = "<table>";
+        html += "<thead><tr><th>Tipo</th><th>Nombre</th></tr></thead><tbody>";
+        for (let pet of myObj.pets) {
+          html += `<tr><td>${pet.type}</td><td>${pet.name}</td></tr>`;
+        }
+        html += "</tbody></table>";
+        document.getElementById("tablaMascotas").innerHTML = html;
+      };
+      xhttp.open("GET", "https://www.w3schools.com/js/json_demo.txt");
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
