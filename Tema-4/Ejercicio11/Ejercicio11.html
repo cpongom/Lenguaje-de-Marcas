@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio AJAX 1 - Tabla con DIVs</title>
+  <style>
+    .table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+      padding: 4px 0;
+    }
+    .cell {
+      flex: 1;
+      padding: 4px;
+      border-right: 1px solid #ccc;
+    }
+    .header .cell {
+      font-weight: bold;
+      background-color: #f0f0f0;
+    }
+    .row .cell:last-child {
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Listado de CDs (usando DIVs como tabla)</h2>
+  <div id="cdTable" class="table"></div>
+  <script>
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      const xmlDoc = this.responseXML;
+      const cds = xmlDoc.getElementsByTagName("CD");
+
+      const headerRow = document.createElement("div");
+      headerRow.classList.add("row", "header");
+      const encabezados = ["Título", "Artista", "País", "Compañía", "Precio", "Año"];
+      encabezados.forEach(t => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.textContent = t;
+        headerRow.appendChild(cell);
+      });
+      document.getElementById("cdTable").appendChild(headerRow);
+      for (let i = 0; i < cds.length; i++) {
+        const row = document.createElement("div");
+        row.classList.add("row");
+        const title = cds[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+        const artist = cds[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue;
+        const country = cds[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
+        const company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
+        const price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
+        const year = cds[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+        [title, artist, country, company, `${price} €`, year].forEach(text => {
+          const cell = document.createElement("div");
+          cell.classList.add("cell");
+          cell.textContent = text;
+          row.appendChild(cell);
+        });
+        document.getElementById("cdTable").appendChild(row);
+      }
+    };
+    xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
+    xhttp.send();
+  </script>
+</body>
+</html>
