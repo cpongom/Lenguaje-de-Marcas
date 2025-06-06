@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JSON 5 - NASA APOD</title>
+  <style>
+    #contenedor {
+      max-width: 600px;
+      margin: 1rem auto;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="contenedor">
+    <h2>APOD – Astronomy Picture Of the Day (2020-05-01)</h2>
+    <button onclick="cargarAPOD()">Mostrar información</button>
+    <p id="fecha"></p>
+    <p id="descripcion"></p>
+    <img id="imagenAPOD" src="" alt="Imagen APOD" />
+  </div>
+  <script>
+    function cargarAPOD() {
+      const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2020-05-01";
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        const data = JSON.parse(this.responseText);
+        document.getElementById("descripcion").textContent = data.explanation;
+        document.getElementById("fecha").textContent = `Fecha: ${data.date}`;
+        document.getElementById("imagenAPOD").src = data.url;
+      };
+      xhttp.open("GET", url);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
