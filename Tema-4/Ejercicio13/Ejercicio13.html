@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JSON 3</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 1rem;
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 0.4rem 0.6rem;
+    }
+    th {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h2>JSON Demo Array</h2>
+  <button onclick="cargarJSON()">Cargar datos</button>
+  <p id="longitud"></p>
+  <div id="tablaJson"></div>
+  <script>
+    function cargarJSON() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        const data = JSON.parse(this.responseText);
+        document.getElementById("longitud").textContent = 
+          `Longitud del array: ${data.length}`;
+        let html = "<table><thead><tr><th>Nombre</th><th>Edad</th><th>Ciudad</th></tr></thead><tbody>";
+        for (let i = 0; i < data.length; i++) {
+          html += `<tr>
+                     <td>${data[i].name}</td>
+                     <td>${data[i].age}</td>
+                     <td>${data[i].city}</td>
+                   </tr>`;
+        }
+        html += "</tbody></table>";
+        document.getElementById("tablaJson").innerHTML = html;
+      };
+      xhttp.open("GET", "https://www.w3schools.com/js/json_demo_array.txt");
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
