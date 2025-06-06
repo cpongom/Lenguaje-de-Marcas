@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio DOM 4</title>
+</head>
+<body>
+  <h2>Página de ejemplo</h2>
+  <p>Algunos enlaces:</p>
+  <a href="https://www.google.com">Google</a><br>
+  <a href="https://www.wikipedia.org">Wikipedia</a><br>
+  <p>Algunas imágenes:</p>
+  <img src="img1.jpg" alt="Imagen 1"><br>
+  <img src="img2.jpg" alt="Imagen 2"><br>
+  <script>
+    console.log("Título de la página:", document.title);
+    const imgs = document.getElementsByTagName("img");
+    console.log("Imágenes de la página:");
+    for (let i = 0; i < imgs.length; i++) {
+      console.log(`  src: ${imgs[i].src}`);
+    }
+    const enlaces = document.getElementsByTagName("a");
+    console.log("Enlaces de la página:");
+    for (let i = 0; i < enlaces.length; i++) {
+      console.log(`  href: ${enlaces[i].href}`);
+    }
+  </script>
+</body>
+</html>
