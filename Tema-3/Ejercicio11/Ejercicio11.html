@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio DOM 1</title>
+  <style>
+    #salida {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Párrafos de ejemplo</h2>
+  <p class="parrafo">Primer párrafo con clase.</p>
+  <p class="parrafo">Segundo párrafo con clase.</p>
+  <p class="parrafo">Tercer párrafo con clase.</p>
+  <button onclick="mostrarParrafos()">Mostrar contenido</button>
+  <div id="salida"></div>
+  <script>
+    function mostrarParrafos() {
+      const parrafos = document.getElementsByClassName("parrafo");
+      let texto = "";
+      for (let p of parrafos) {
+        texto += p.textContent + "<br>";
+      }
+      document.getElementById("salida").innerHTML = texto;
+    }
+  </script>
+</body>
+</html>
