@@ -66,12 +66,12 @@ Ejercicio | Descripción
 ## Tema 4
 Ejercicio | Descripción
 ----------|------------
-[Ejercicio 1](/Tema-4/Ejercicio1/)|Creación de un documento XML básico sobre información personal
-[Ejercicio 2](/Tema-4/Ejercicio2/)|Desarrollo de DTD interno y externo para validar un catálogo de libros
-[Ejercicio 3](/Tema-4/Ejercicio3/)|Diseño de XML Schema para una biblioteca digital
-[Ejercicio 4](/Tema-4/Ejercicio4/)|Transformación de XML a HTML usando XSLT para mostrar un menú de restaurante
-[Ejercicio 5](/Tema-4/Ejercicio5/)|Validación de documentos XML usando diferentes esquemas y DTDs
-[Ejercicio 6](/Tema-4/Ejercicio6/)|Implementación de namespaces y procesamiento de XML con JavaScript
+[Ejercicio 1](/Tema-4/Ejercicio1)|Creación de un documento XML básico sobre información personal
+[Ejercicio 2](/Tema-4/Ejercicio2)|Desarrollo de DTD interno y externo para validar un catálogo de libros
+[Ejercicio 3](/Tema-4/Ejercicio3)|Diseño de XML Schema para una biblioteca digital
+[Ejercicio 4](/Tema-4/Ejercicio4)|Transformación de XML a HTML usando XSLT para mostrar un menú de restaurante
+[Ejercicio 5](/Tema-4/Ejercicio5)|Validación de documentos XML usando diferentes esquemas y DTDs
+[Ejercicio 6](/Tema-4/Ejercicio6)|Implementación de namespaces y procesamiento de XML con JavaScript
 [Ejercicio 7](/Tema-4/Ejercicio7)|Desarrollo de una aplicación web completa usando XML, XSLT y JavaScript
 [Ejercicio 8](/Tema-4/Ejercicio8)|Consultas básicas al DOM de un documento XML de libros (books.xml)
 [Ejercicio 9](/Tema-4/Ejercicio9)|Manipulación de un catálogo de CDs (cd_catalog.xml) usando XMLHttpRequest
