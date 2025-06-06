@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 9 - Conversión Temperaturas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1rem;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+    }
+    input {
+      width: 80px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Convertidor de Temperaturas</h2>
+  <div>
+    <label for="tbf">Fahrenheit:</label>
+    <input type="number" id="tbf" name="tbf" placeholder="°F">
+    <button onclick="convFtoC()">→ Celsius</button>
+  </div>
+  <div>
+    <label for="tbc">Celsius:</label>
+    <input type="number" id="tbc" name="tbc" placeholder="°C">
+    <button onclick="convCtoF()">→ Fahrenheit</button>
+  </div>
+  <script>
+    function toCelsius(f) {
+      return ((5/9) * (f - 32)).toFixed(2);
+    }
+    function toFahrenheit(c) {
+      return ((c * 9/5) + 32).toFixed(2);
+    }
+    function convFtoC() {
+      const f = parseFloat(document.getElementById("tbf").value);
+      if (!isNaN(f)) {
+        document.getElementById("tbc").value = toCelsius(f);
+      }
+    }
+    function convCtoF() {
+      const c = parseFloat(document.getElementById("tbc").value);
+      if (!isNaN(c)) {
+        document.getElementById("tbf").value = toFahrenheit(c);
+      }
+    }
+  </script>
+</body>
+</html>
