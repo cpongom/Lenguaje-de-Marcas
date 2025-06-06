@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDList>
+  <CD serial="B6B41B" disc-length="42:36">
+    <title>Abbey Road</title>
+    <artist>The Beatles</artist>
+    <year>1969</year>
+    <genre>Rock</genre>
+    <tracks>
+      <track number="1" duration="4:19">
+        <name>Come Together</name>
+      </track>
+      <track number="2" duration="3:01">
+        <name>Something</name>
+      </track>
+    </tracks>
+  </CD>
+  <CD serial="MJ1982" disc-length="42:19">
+    <title>Thriller</title>
+    <artist>Michael Jackson</artist>
+    <year>1982</year>
+    <genre>Pop</genre>
+    <tracks>
+      <track number="1" duration="5:57">
+        <name>Wanna Be Startin' Somethin'</name>
+      </track>
+      <track number="2" duration="4:18">
+        <name>Baby Be Mine</name>
+      </track>
+    </tracks>
+  </CD>
+</CDList>
