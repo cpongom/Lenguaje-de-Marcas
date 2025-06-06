@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 8 - Calculadora</title>
+  <style>
+    #calculadora {
+      width: 240px;
+      margin: 2rem auto;
+      border: 2px solid #333;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    #pantalla {
+      width: 100%;
+      height: 40px;
+      font-size: 1.2rem;
+      text-align: right;
+      padding: 0 0.5rem;
+      margin-bottom: 0.5rem;
+      box-sizing: border-box;
+    }
+    .fila {
+      display: flex;
+    }
+    .btn {
+      flex: 1;
+      margin: 2px;
+      height: 40px;
+      font-size: 1rem;
+      border: none;
+      background: #e0e0e0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-operador {
+      background: #ff9500;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculadora">
+    <input type="text" id="pantalla" disabled />
+    <div class="fila">
+      <button class="btn" onclick="agregarValor('7')">7</button>
+      <button class="btn" onclick="agregarValor('8')">8</button>
+      <button class="btn" onclick="agregarValor('9')">9</button>
+      <button class="btn btn-operador" onclick="agregarValor('/')">÷</button>
+    </div>
+    <div class="fila">
+      <button class="btn" onclick="agregarValor('4')">4</button>
+      <button class="btn" onclick="agregarValor('5')">5</button>
+      <button class="btn" onclick="agregarValor('6')">6</button>
+      <button class="btn btn-operador" onclick="agregarValor('*')">×</button>
+    </div>
+    <div class="fila">
+      <button class="btn" onclick="agregarValor('1')">1</button>
+      <button class="btn" onclick="agregarValor('2')">2</button>
+      <button class="btn" onclick="agregarValor('3')">3</button>
+      <button class="btn btn-operador" onclick="agregarValor('-')">−</button>
+    </div>
+    <div class="fila">
+      <button class="btn" onclick="agregarValor('0')">0</button>
+      <button class="btn" onclick="agregarValor('.')">.</button>
+      <button class="btn" onclick="calcular()">=</button>
+      <button class="btn btn-operador" onclick="agregarValor('+')">+</button>
+    </div>
+    <div class="fila">
+      <button class="btn" style="flex: 2;" onclick="borrarTodo()">C</button>
+      <button class="btn" style="flex: 2;" onclick="borrarUltimo()">⌫</button>
+    </div>
+  </div>
+  <script>
+    function agregarValor(valor) {
+      const pantalla = document.getElementById("pantalla");
+      pantalla.value += valor;
+    }
+    function borrarTodo() {
+      document.getElementById("pantalla").value = "";
+    }
+    function borrarUltimo() {
+      const pantalla = document.getElementById("pantalla");
+      pantalla.value = pantalla.value.slice(0, -1);
+    }
+    function calcular() {
+      const pantalla = document.getElementById("pantalla");
+      try {
+        pantalla.value = eval(pantalla.value) || "";
+      } catch (error) {
+        pantalla.value = "Error";
+      }
+    }
+  </script>
+</body>
+</html>
