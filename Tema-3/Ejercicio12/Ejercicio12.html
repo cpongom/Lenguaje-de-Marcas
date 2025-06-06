@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio DOM 2</title>
+</head>
+<body>
+  <h2>Agregar imagen mediante createElement</h2>
+  <button onclick="agregarImagen()">Agregar Imagen</button>
+  <div id="contenedor"></div>
+  <script>
+    function agregarImagen() {
+      const img = document.createElement("img");
+      img.src = "nuevaImagen.jpg";
+      img.alt = "Imagen agregada dinámicamente";
+      img.style.width = "300px";
+      document.getElementById("contenedor").appendChild(img);
+    }
+  </script>
+</body>
+</html>
