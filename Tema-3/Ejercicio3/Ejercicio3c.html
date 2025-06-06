@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 3c - Cambio de CSS</title>
+  <link id="hoja" rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+  <h2>Demostración de cambio de hoja de estilo</h2>
+  <p>Este párrafo cambiará de aspecto según el CSS cargado.</p>
+  <button onclick="cargaEstilo('estilo1.css')">Estilo 1</button>
+  <button onclick="cargaEstilo('estilo2.css')">Estilo 2</button>
+  <script>
+    function cargaEstilo(ruta) {
+      document.getElementById("hoja").setAttribute("href", ruta);
+    }
+  </script>
+</body>
+</html>
