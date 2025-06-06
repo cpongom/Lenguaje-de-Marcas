@@ -1,0 +1,10 @@
+<book>
+  <chapters>
+    <chapter>Capítulo 1</chapter>
+    <chapter>Capítulo 2</chapter>
+  </chapters>
+  <author>
+    <name>Autor Ejemplo</name>
+    <address>Calle Ejemplo 123, Ciudad</address>
+  </author>
+</book>
