@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 6 - Citas aleatorias</title>
+  <style>
+    #cita {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+    #autor {
+      margin-bottom: 1rem;
+      text-align: right;
+      font-weight: bold;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Citas aleatorias</h2>
+  <div id="contenedorCita">
+    <p id="cita">Pulsa el botón para ver una cita.</p>
+    <p id="autor"></p>
+    <button onclick="nuevaCita()">Nueva cita</button>
+  </div>
+  <script>
+    const citas = [
+      { texto: "La vida es aquello que te sucede mientras estás ocupado haciendo otros planes.", autor: "John Lennon" },
+      { texto: "El único imposible es aquello que no intentas.", autor: "Jean-Paul Sartre" },
+      { texto: "No cuentes los días, haz que los días cuenten.", autor: "Muhammad Ali" },
+      { texto: "La mejor forma de predecir el futuro es creándolo.", autor: "Peter Drucker" },
+      { texto: "Sé tú el cambio que quieres ver en el mundo.", autor: "Mahatma Gandhi" }
+    ];
+    function nuevaCita() {
+      const indice = Math.floor(Math.random() * citas.length);
+      document.getElementById("cita").textContent = `"${citas[indice].texto}"`;
+      document.getElementById("autor").textContent = `— ${citas[indice].autor}`;
+    }
+  </script>
+</body>
+</html>
