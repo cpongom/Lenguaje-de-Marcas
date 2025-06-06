@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 5 - Tres grupos de acciones</title>
+  <style>
+    #parrafo {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
+    #imagen {
+      width: 300px;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    #mensajes {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #999;
+      width: 300px;
+      min-height: 50px;
+    }
+    button {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ejercicio 5: Tres grupos de botones</h2>
+  <div>
+    <p id="parrafo">Este párrafo cambiará su estilo de fuente.</p>
+    <button onclick="cambiarFuente('Arial, sans-serif')">Arial</button>
+    <button onclick="cambiarFuente('Times New Roman, serif')">Times New Roman</button>
+    <button onclick="cambiarFuente('Courier New, monospace')">Courier New</button>
+  </div>
+  <div>
+    <img id="imagen" src="img1.jpg" alt="Imagen inicial">
+    <button onclick="cambiarImagen('img1.jpg')">Imagen 1</button>
+    <button onclick="cambiarImagen('img2.jpg')">Imagen 2</button>
+    <button onclick="cambiarImagen('img3.jpg')">Imagen 3</button>
+  </div>
+  <div>
+    <button onclick="mostrarMensaje('Hola, este es el mensaje 1')">Mensaje 1</button>
+    <button onclick="mostrarMensaje('Segundo mensaje mostrado!')">Mensaje 2</button>
+    <button onclick="mostrarMensaje('¡Tercer mensaje aquí!')">Mensaje 3</button>
+    <div id="mensajes">Aquí aparecerán los mensajes.</div>
+  </div>
+  <script>
+    function cambiarFuente(fuente) {
+      document.getElementById("parrafo").style.fontFamily = fuente;
+    }
+    function cambiarImagen(ruta) {
+      document.getElementById("imagen").src = ruta;
+    }
+    function mostrarMensaje(texto) {
+      document.getElementById("mensajes").textContent = texto;
+    }
+  </script>
+</body>
+</html>
