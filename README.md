@@ -56,12 +56,6 @@ Ejercicio | Descripción
 [Ejercicio 12](/Tema-3/Ejercicio12)|Galería de imágenes dinámica
 [Ejercicio 13](/Tema-3/Ejercicio13)|Añadir elementos
 [Ejercicio 14](/Tema-3/Ejercicio14)|Creamos elementos dinámicos
-[Ejercicio 15](/Tema-3/Ejercicio15)|Removemos elementos
-[Ejercicio 16](/Tema-3/Ejercicio16)|Documento de HTML con propiedades
-[Ejercicio 17](/Tema-3/Ejercicio17)|Editor HTML y CSS
-[Ejercicio 18](/Tema-3/Ejercicio18)|Cambiamos el estilo
-[Ejercicio 19](/Tema-3/Ejercicio19)|Cambiamos el estilo de sheet
-[Ejercicio 20](/Tema-3/Ejercicio20)|HTML Y DOM
 
 ## Tema 4
 Ejercicio | Descripción
