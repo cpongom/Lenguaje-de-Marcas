@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio JS 4 - Variables y entradas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1rem;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+    input {
+      margin-bottom: 0.5rem;
+    }
+    #resultado {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ejercicio 4: Trabajar con variables</h2>
+  <div>
+    <label for="txtInput">Texto:</label>
+    <input type="text" id="txtInput" placeholder="Escribe algo">
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+  </div>
+  <div>
+    <label for="numInput">Número:</label>
+    <input type="number" id="numInput" placeholder="Escribe un número">
+    <button onclick="mostrarNumero()">Mostrar número</button>
+  </div>
+  <p id="resultado"></p>
+  <script>
+    function mostrarTexto() {
+      const valor = document.getElementById("txtInput").value;
+      document.getElementById("resultado").innerHTML = `Texto ingresado: ${valor}`;
+    }
+    function mostrarNumero() {
+      const valor = document.getElementById("numInput").value;
+      document.getElementById("resultado").innerHTML = `Número ingresado: ${valor}`;
+    }
+  </script>
+</body>
+</html>
