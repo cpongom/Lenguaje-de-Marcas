@@ -42,26 +42,26 @@ Ejercicio | Descripción
 ## Tema 3
 Ejercicio | Descripción
 ----------|------------
-[Ejercicio 1](/Tema-3/Ejercicio1.html)|Ejercicio básico
-[Ejercicio 2](/Tema-3/Ejercicio2.html)|Mostrar mensaje
-[Ejercicio 3](/Tema-3/Ejercicio3.html)|Mostrar imágenes
-[Ejercicio 4](/Tema-3/Ejercicio4.html)|Trabajando con variables
-[Ejercicio 5](/Tema-3/Ejercicio5.html)|Cambiamos imagen, estilo y texto
-[Ejercicio 6](/Tema-3/Ejercicio6.html)|Copia la imagen
-[Ejercicio 7](/Tema-3/Ejercicio7.html)|Slider
-[Ejercicio 8](/Tema-3/Ejercicio8.html)|Calculadora
-[Ejercicio 9](/Tema-3/Ejercicio9.html)|Conversor de unidades
-[Ejercicio 10](/Tema-3/Ejercicio10.html)|Juego de memoria
-[Ejercicio 11](/Tema-3/Ejercicio11.html)|Validación de formulario
-[Ejercicio 12](/Tema-3/Ejercicio12.html)|Galería de imágenes dinámica
-[Ejercicio 13](/Tema-3/Ejercicio13.html)|Añadir elementos
-[Ejercicio 14](/Tema-3/Ejercicio14.html)|Creamos elementos dinámicos
-[Ejercicio 15](/Tema-3/Ejercicio15.html)|Removemos elementos
-[Ejercicio 16](/Tema-3/Ejercicio16.html)|Documento de HTML con propiedades
-[Ejercicio 17](/Tema-3/Ejercicio17.html)|Editor HTML y CSS
-[Ejercicio 18](/Tema-3/Ejercicio18.html)|Cambiamos el estilo
-[Ejercicio 19](/Tema-3/Ejercicio19.html)|Cambiamos el estilo de sheet
-[Ejercicio 20](/Tema-3/Ejercicio20.html)|HTML Y DOM
+[Ejercicio 1](/Tema-3/Ejercicio1)|Ejercicio básico
+[Ejercicio 2](/Tema-3/Ejercicio2)|Mostrar mensaje
+[Ejercicio 3](/Tema-3/Ejercicio3)|Mostrar imágenes
+[Ejercicio 4](/Tema-3/Ejercicio4)|Trabajando con variables
+[Ejercicio 5](/Tema-3/Ejercicio5)|Cambiamos imagen, estilo y texto
+[Ejercicio 6](/Tema-3/Ejercicio6)|Copia la imagen
+[Ejercicio 7](/Tema-3/Ejercicio7)|Slider
+[Ejercicio 8](/Tema-3/Ejercicio8)|Calculadora
+[Ejercicio 9](/Tema-3/Ejercicio9)|Conversor de unidades
+[Ejercicio 10](/Tema-3/Ejercicio10)|Juego de memoria
+[Ejercicio 11](/Tema-3/Ejercicio11)|Validación de formulario
+[Ejercicio 12](/Tema-3/Ejercicio12)|Galería de imágenes dinámica
+[Ejercicio 13](/Tema-3/Ejercicio13)|Añadir elementos
+[Ejercicio 14](/Tema-3/Ejercicio14)|Creamos elementos dinámicos
+[Ejercicio 15](/Tema-3/Ejercicio15)|Removemos elementos
+[Ejercicio 16](/Tema-3/Ejercicio16)|Documento de HTML con propiedades
+[Ejercicio 17](/Tema-3/Ejercicio17)|Editor HTML y CSS
+[Ejercicio 18](/Tema-3/Ejercicio18)|Cambiamos el estilo
+[Ejercicio 19](/Tema-3/Ejercicio19)|Cambiamos el estilo de sheet
+[Ejercicio 20](/Tema-3/Ejercicio20)|HTML Y DOM
 
 ## Tema 4
 Ejercicio | Descripción
@@ -79,6 +79,6 @@ Ejercicio | Descripción
 [Ejercicio 11](/Tema-4/Ejercicio11)|Visualización de información de CDs usando AJAX y cd_catalog.xml
 [Ejercicio 12](/Tema-4/Ejercicio12)|Consulta de información meteorológica de AEMET para localidades de Huelva
 [Ejercicio 13](/Tema-4/Ejercicio13)|Manipulación de arrays JSON con AJAX
-[Ejercicio 14](/Tema-4/Ejercicio14)|	Procesamiento de objetos JSON complejos con mascotas
+[Ejercicio 14](/Tema-4/Ejercicio14)|Procesamiento de objetos JSON complejos con mascotas
 [Ejercicio 15](/Tema-4/Ejercicio15)|Consumo de la API de la NASA para mostrar la imagen astronómica del día
 
