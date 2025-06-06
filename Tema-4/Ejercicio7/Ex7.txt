@@ -1,0 +1,8 @@
+1.
+<!-- Este es un comentario en XML -->
+
+2.
+No, un atributo no puede repetirse. Cada atributo en una misma etiqueta debe tener un nombre único.
+
+3.
+Se define en la sección 3.1, en esta se define que el nombre en la etiqueta de inicio debe coincidir con el nombre en la etiqueta de cierre.
