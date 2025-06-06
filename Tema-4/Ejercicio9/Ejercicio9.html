@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 - Mostrar títulos de CDs</title>
+</head>
+<body>
+  <h2>Títulos de los CDs</h2>
+  <div id="titulos"></div>
+  <script>
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      const xmlDoc = this.responseXML;
+      const cds = xmlDoc.getElementsByTagName("CD");
+      let salida = "<ul>";
+      for (let i = 0; i < cds.length; i++) {
+        const title = cds[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+        salida += `<li>${title}</li>`;
+      }
+      salida += "</ul>";
+      document.getElementById("titulos").innerHTML = salida;
+    };
+    xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
+    xhttp.send();
+  </script>
+  
+  <h2>Precios de los CDs</h2>
+  <div id="precios"></div>
+  <script>
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      const xmlDoc = this.responseXML;
+      const cds = xmlDoc.getElementsByTagName("CD");
+      let salida = "<ul>";
+      for (let i = 0; i < cds.length; i++) {
+        const price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
+        salida += `<li>${price} €</li>`;
+      }
+      salida += "</ul>";
+      document.getElementById("precios").innerHTML = salida;
+    };
+    xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
+    xhttp.send();
+  </script>
+
+  <h2>Compañías de los CDs</h2>
+  <div id="companias"></div>
+  <script>
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      const xmlDoc = this.responseXML;
+      const cds = xmlDoc.getElementsByTagName("CD");
+      let salida = "<ul>";
+      for (let i = 0; i < cds.length; i++) {
+        const company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
+        salida += `<li>${company}</li>`;
+      }
+      salida += "</ul>";
+      document.getElementById("companias").innerHTML = salida;
+    };
+    xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml");
+    xhttp.send();
+  </script>
+</body>
+</html>
